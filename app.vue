@@ -1,18 +1,12 @@
 <template>
-  <div>
-    <nav>
-      <ul>
-        <li>
-          <NuxtLink to="/">Home</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/about">About</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/Blog">Blog</NuxtLink>
-        </li>
-      </ul>
-    </nav>
+  <NuxtLayout>
     <NuxtPage />
-  </div>
+  </NuxtLayout>
 </template>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+}
+</style>
