@@ -1,6 +1,11 @@
+<script setup>
+const route = useRoute();
+</script>
+
 <template>
   <NuxtLayout>
     <NuxtPage />
+    <h1>Current Route: {{ route.path }}</h1>
   </NuxtLayout>
 </template>
 
