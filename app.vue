@@ -1,6 +1,4 @@
 <script setup>
-const route = useRoute();
-
 useHead({
   titleTemplate: "%s - Portfolio",
   link: [
@@ -37,7 +35,6 @@ useSeoMeta({
 <template>
   <NuxtLayout>
     <NuxtPage />
-    <h1>Current Route: {{ route.path }}</h1>
   </NuxtLayout>
 </template>
 
