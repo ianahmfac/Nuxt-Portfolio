@@ -19,6 +19,19 @@ useHead({
     },
   ],
 });
+
+useSeoMeta({
+  title: "Portfolio - ianahmfac",
+  description: "This is my amazing portfolio site, let me tell you about it.",
+  ogTitle: "Portfolio - ianahmfac",
+  ogDescription: "This is my amazing portfolio site, let me tell you about it.",
+  ogImage:
+    "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  twitterCard: "summary_large_image",
+  twitterTitle: "Portfolio - ianahmfac",
+  twitterDescription:
+    "This is my amazing portfolio site, let me tell you about it.",
+});
 </script>
 
 <template>
