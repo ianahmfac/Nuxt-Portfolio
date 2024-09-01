@@ -1,5 +1,8 @@
 <script setup>
 const route = useRoute();
+definePageMeta({
+  layout: "blog",
+});
 </script>
 
 <template>
