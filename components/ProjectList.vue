@@ -23,7 +23,7 @@ const repos = computed(() => {
         <div v-for="repo in repos" :key="repo.id">
           <a :href="repo.html_url" target="_blank">
             <li
-              class="border border-gray-100 rounded-md p-4 font-mono hover:bg-gray-100 cursor-pointer"
+              class="border border-gray-100 dark:border-slate-900 rounded-md p-4 font-mono hover:bg-gray-100 dark:hover:bg-slate-900 cursor-pointer"
             >
               <div class="grid grid-cols-12 items-center text-sm">
                 <div class="col-span-11">

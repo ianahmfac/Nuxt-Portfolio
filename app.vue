@@ -43,5 +43,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans";
+  @apply bg-white dark:bg-slate-800 text-slate-800 dark:text-gray-100;
 }
 </style>
