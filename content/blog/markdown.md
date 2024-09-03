@@ -148,3 +148,19 @@ A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
 ```
+
+## Code
+
+```json
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
+
+```javascript
+function log() {
+  console.log("Markdown.md");
+}
+```
