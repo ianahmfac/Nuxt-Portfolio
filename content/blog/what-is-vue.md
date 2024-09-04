@@ -16,7 +16,7 @@ head:
     - name: "og:image"
       content: "/images/vuejs.png"
 publishedAt: 2024-03-02 20:11:00
-toc: true
+tableOfContent: true
 ---
 
 # Apa itu Vue.js?

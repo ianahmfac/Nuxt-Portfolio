@@ -10,6 +10,7 @@ head:
     - name: "og:description"
       content: "Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me."
 publishedAt: 2024-03-02 20:11:00
+tableOfContent: true
 ---
 
 # Welcome to StackEdit 2!

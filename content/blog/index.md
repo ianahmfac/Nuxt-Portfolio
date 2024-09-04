@@ -1,6 +1,7 @@
 ---
 title: "Blog"
 description: "List of all my recent blog posts"
+tableOfContent: false
 ---
 
 # Blog Post List

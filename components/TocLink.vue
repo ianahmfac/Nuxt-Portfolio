@@ -19,7 +19,7 @@ defineProps({
           'ml-4': level > 0,
         }"
       >
-        {{ link.text }}
+        - {{ link.text }}
       </NuxtLink>
       <TocLink v-if="link.children" :links="link.children" :level="level + 1" />
     </li>
