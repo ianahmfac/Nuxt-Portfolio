@@ -11,7 +11,7 @@ useHead({
 <template>
   <!-- prose:pre => Untuk styling pada code block -->
   <article
-    class="prose dark:prose-invert prose-pre:bg-gray-50 dark:prose-pre:bg-slate-900 prose-pre:text-slate-800 dark:prose-pre:text-gray-100"
+    class="content-doc-full prose-pre:bg-gray-50 dark:prose-pre:bg-slate-900 prose-pre:text-slate-800 dark:prose-pre:text-gray-100"
   >
     <ContentDoc />
   </article>

@@ -45,4 +45,12 @@ body {
   font-family: "Open Sans";
   @apply bg-white dark:bg-slate-800 text-slate-800 dark:text-gray-100;
 }
+
+.content-doc-full {
+  @apply prose dark:prose-invert max-w-none;
+}
+
+.content-doc {
+  @apply prose dark:prose-invert;
+}
 </style>
