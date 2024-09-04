@@ -1,12 +1,33 @@
 <script setup>
-const { data: posts } = await useAsyncData("blog-list", () => {
+const { data } = await useAsyncData("blog-list", () => {
   return (
     queryContent("blog")
       //   Exclude blog.md post
       .where({ _path: { $ne: "/blog" } })
-      .only(["_path", "title"])
+      .only(["_path", "title", "publishedAt"])
+      // Sort (-1) akan menampilkan data terbaru
+      .sort({ publishedAt: -1 })
       .find()
   );
+});
+
+const posts = computed(() => {
+  if (!data.value) {
+    return [];
+  }
+  const result = [];
+  let lastYear = null;
+  for (const post of data.value) {
+    const year = new Date(post.publishedAt).getFullYear();
+
+    post.isSameYear = year === lastYear;
+    post.year = year;
+
+    result.push(post);
+    lastYear = year;
+  }
+
+  return result;
 });
 </script>
 
@@ -22,7 +43,13 @@ const { data: posts } = await useAsyncData("blog-list", () => {
           :to="post._path"
           class="column hover:bg-gray-100 dark:hover:bg-slate-900"
         >
-          <div>2024</div>
+          <div
+            :class="{
+              'text-white dark:text-slate-800': post.isSameYear,
+            }"
+          >
+            {{ post.year }}
+          </div>
           <div>{{ post.title }}</div>
         </NuxtLink>
       </li>
