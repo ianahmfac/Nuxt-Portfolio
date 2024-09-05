@@ -6,6 +6,35 @@
 useHead({
   title: "Blog",
 });
+
+const activeId = ref(null);
+
+onMounted(() => {
+  const callback = (entries) => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        activeId.value = entry.target.id;
+        break;
+      }
+    }
+  };
+  const observer = new IntersectionObserver(callback, {
+    root: null,
+    threshold: 0.5,
+    rootMargin: "0px",
+  });
+  const element = document.querySelectorAll("h2", "h3");
+  for (const el of element) {
+    // Meng-observer hanya element h2 dan h3 saja
+    observer.observe(el);
+  }
+
+  onBeforeUnmount(() => {
+    for (const el of element) {
+      observer.unobserve(el);
+    }
+  });
+});
 </script>
 
 <template>
@@ -30,7 +59,7 @@ useHead({
           <aside class="sticky top-8">
             <div class="font-bold mb-2">Table of Content</div>
             <nav>
-              <TocLink :links="doc.body.toc.links" />
+              <TocLink :links="doc.body.toc.links" :activeId="activeId" />
             </nav>
           </aside>
         </div>
