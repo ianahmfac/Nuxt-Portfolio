@@ -5,7 +5,7 @@ keywords: "Front-End Developer, Mobile Developer, HTML, CSS, JavaScript, Vue.js,
 author: "Ian Ahmad Fachriza"
 ---
 
-## About Me
+# About Me
 
 Hi, I'm **Ian Ahmad Fachriza**, a 26-year-old passionate **Front-End Developer** and **Mobile Developer**. I specialize in creating dynamic and responsive web applications as well as mobile apps that provide excellent user experiences.
 
