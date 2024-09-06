@@ -1,6 +1,6 @@
 <script setup>
 const route = useRoute();
-const { links, level, activeId } = defineProps({
+const { links, level } = defineProps({
   links: Array,
   level: {
     type: Number,

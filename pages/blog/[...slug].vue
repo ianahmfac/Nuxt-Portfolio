@@ -58,7 +58,7 @@ onMounted(() => {
 
             <!-- Menampilkan Table of Content -->
             <div
-              class="hidden md:block md:col-span-2 not-prose col-auto"
+              class="hidden md:block md:col-span-2 not-prose"
               v-if="doc.tableOfContent"
             >
               <aside class="sticky top-8">
