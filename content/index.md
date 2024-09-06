@@ -11,4 +11,4 @@ Read more [about me](/about), or see my latest [projects](/project).
 
 ## Latest on my blogs
 
-::LatestBlogList{limit=2}
+::LatestBlogList{:limit=2}
