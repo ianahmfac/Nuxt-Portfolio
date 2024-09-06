@@ -1,11 +1,7 @@
-<script setup>
-useHead({
-  title: "Home",
-});
-</script>
-
 <template>
   <div>
-    <h1>HALO NUXT</h1>
+    <article class="content-doc-full">
+      <ContentDoc />
+    </article>
   </div>
 </template>

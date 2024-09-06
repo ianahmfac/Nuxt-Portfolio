@@ -52,8 +52,4 @@ body {
 .content-doc-full {
   @apply prose dark:prose-invert max-w-none;
 }
-
-.content-doc {
-  @apply prose dark:prose-invert;
-}
 </style>
